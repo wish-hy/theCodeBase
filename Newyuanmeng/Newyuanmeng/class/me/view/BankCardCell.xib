@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="BankCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-Wx-PV1">
+                        <rect key="frame" x="10" y="14" width="100" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="pvN-ur-Inb"/>
+                            <constraint firstAttribute="width" constant="100" id="zA3-2k-rtM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尾号3453储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShX-Sq-Le1">
+                        <rect key="frame" x="113" y="25" width="162" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9N-eW-Dc6">
+                        <rect key="frame" x="280" y="19" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="97t-ze-iJi"/>
+                            <constraint firstAttribute="height" constant="30" id="MEX-PZ-VBD"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34x-2r-ubb">
+                        <rect key="frame" x="20" y="68.5" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0bQ-Cr-Qud"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EXh-Wx-PV1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1d1-OX-IZY"/>
+                    <constraint firstAttribute="trailing" secondItem="34x-2r-ubb" secondAttribute="trailing" id="6Zi-Kg-uxj"/>
+                    <constraint firstItem="ShX-Sq-Le1" firstAttribute="centerY" secondItem="EXh-Wx-PV1" secondAttribute="centerY" id="FCK-jp-z3D"/>
+                    <constraint firstAttribute="bottom" secondItem="34x-2r-ubb" secondAttribute="bottom" id="IEL-Ws-mPU"/>
+                    <constraint firstItem="EXh-Wx-PV1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Oyd-jt-PnH"/>
+                    <constraint firstItem="34x-2r-ubb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="avm-Ji-AHe"/>
+                    <constraint firstItem="Q9N-eW-Dc6" firstAttribute="centerY" secondItem="EXh-Wx-PV1" secondAttribute="centerY" id="caz-ra-RjL"/>
+                    <constraint firstAttribute="trailing" secondItem="Q9N-eW-Dc6" secondAttribute="trailing" constant="10" id="dvM-NH-HAU"/>
+                    <constraint firstItem="Q9N-eW-Dc6" firstAttribute="leading" secondItem="ShX-Sq-Le1" secondAttribute="trailing" constant="5" id="fY6-Qv-vVX"/>
+                    <constraint firstItem="ShX-Sq-Le1" firstAttribute="leading" secondItem="EXh-Wx-PV1" secondAttribute="trailing" constant="3" id="nZB-Jz-gd7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bankImage" destination="EXh-Wx-PV1" id="HWz-TU-a4j"/>
+                <outlet property="bankName" destination="ShX-Sq-Le1" id="g4k-rv-Bda"/>
+                <outlet property="isSelect" destination="Q9N-eW-Dc6" id="3W1-ur-T9b"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

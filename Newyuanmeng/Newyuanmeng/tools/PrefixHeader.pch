@@ -1,0 +1,145 @@
+//
+//  PrefixHeader.pch
+//  yuanmeng
+//
+//  Created by hy on 2018/3/16.
+//  Copyright © 2018年 hy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//#import "Newyuanmeng-Swift.h"
+
+#import "MySDKHelper.h"
+
+#import "MyManager.h"
+
+// 封装NSUserDefault 和 自动计算字符串宽高
+#import "NSObject+LSSaveKit.h"
+
+// 颜色转换：iOS中（以#开头）十六进制的颜色转换为UIColor(RGB)
+#import "UIColor+ColorChange.h"
+#import "setButtonIcon.h"
+
+//#import "NSString+Valid.h"
+#import "NSString+LSAttributed.h"
+#import "YGDevelopment.h"   // 宏
+#import <AVFoundation/AVFoundation.h>
+#import "Masonry.h"
+
+#import "CornerButton.h"
+#import "CoreImageView.h"
+#import "CoreVIew.h"
+
+#import <AMapFoundationKit/AMapFoundationKit.h>
+// iconfont 图片
+#import "TBCityIconFont.h"
+#import "UIImage+TBCityIconFont.h"
+
+#import "MJRefresh.h"
+
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+
+#import "UpYunFormUploader.h"
+
+#import "NoticeView.h"
+
+#import "MJExtension.h"
+
+//sdwebimage
+#import "UIImageView+WebCache.h"
+#import "SDImageCache.h"
+
+#import "VillageIcon.h"
+
+#import <RongIMKit/RongIMKit.h>
+
+#import "DCSpeedy.h"
+
+
+// 请求网络工具类
+//#import "HYHttpTool.h"
+
+//支付宝工具类
+//#import "ZLPayTool.h"
+
+//显示提示框
+//#import "ZLAlertTool.h"
+
+//选择年月的pickerView
+//#import "KSDataPickView.h"
+
+
+// 网络接口信息/Users/hy/Desktop/yuanmeng/yuanmeng/main/PrefixHeader.pch
+//#import "HttpUrl.h"
+
+// 静态常量
+//#import "Const.h"
+
+// 计算文字尺寸
+//#import "NSString+Extension.h"
+
+// frame三部曲
+//#import "UIView+Frame.h"
+
+// 个人信息 - TOOL
+//#import "ZLUserInfoTool.h"
+//#import "ZLUserInfoModel.h"
+
+//#import "CommonConfig.h"
+
+#import <RongIMKit/RongIMKit.h>
+//#import "framworks/MyCategory/YGUILabel/UILabel+CustomLabel.h"// UILabel扩展类
+#import "UILabel+CustomLabel.h"
+//#import "framworks/MyCategory/YGUILabel/UILabel+SizeToFit.h"// UILabel扩展类
+#import "UILabel+SizeToFit.h"
+//#import "framworks/MyCategory/YGUIImageView/UIImageView+Corner.h"// UIImageView扩展类
+#import "UIImageView+Corner.h"
+//#import "framworks/MyCategory/YGNSDate/NSDate+Tools.h"// NSDate扩展类
+#import "NSDate+Tools.h"
+//#import "framworks/MyCategory/YGUIView/UIView+LG.h"
+#import "UIView+LG.h"
+//#import "framworks/MyCategory/YGUIButton/UIButton+Custom.h"
+#import "UIButton+Custom.h"
+
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+
+//图片主地址
+#define imgHost @"https://ymlypt.b0.upaiyun.com"
+
+// CachesPath
+#define CachesPath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+// 弱引用
+#define ZLWeakSelf __weak typeof(self) weakSelf = self;
+
+/** 屏幕尺寸 */
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+
+/** 自动提示宏 */
+#define keyPath(objc,keyPath) @(((void)objc.keyPath, #keyPath))
+
+/** 随机色 */
+#define RandomsColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+/** RGB色 */
+#define RGB_Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+/** RGB色 + 透明度 */
+#define RGB_alphaColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define Font_12 [UIFont fontWithName:@"Heiti SC" size:12.0f]
+#define Font_14 [UIFont fontWithName:@"Heiti SC" size:14.0f]
+#define Font_16 [UIFont fontWithName:@"Heiti SC" size:16.0f]
+// 方法输出
+#define MyLog__func__ MyLog(@"%s", __func__)
+
+#define IOS_FSystenVersion ([[[UIDevice currentDevice] systemVersion] floatValue])
+
+
+#endif /* PrefixHeader_pch */

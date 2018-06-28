@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="PromoterCodeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="激活码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-ln-kQl">
+                        <rect key="frame" x="10" y="10" width="40.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="PdA-63-IXo">
+                        <rect key="frame" x="61" y="10" width="184" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="184" id="B9l-vi-S8i"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="9ED55EFA-A968-4416-6FF8-6717DE82D5E0">
+                                <attributes>
+                                    <font key="NSFont" size="10" name=".AppleSystemUIFont"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期:2017-12-28 18:00:03至2017-12-28 18:00:03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-zN-lXA">
+                        <rect key="frame" x="10" y="44.5" width="249" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待激活" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIr-3v-5QL">
+                        <rect key="frame" x="264" y="22.5" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.80784313725490198" green="0.27843137254901962" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(点击复制)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PI-es-ndz">
+                        <rect key="frame" x="265.5" y="41.5" width="44" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.4326014518737793" green="0.57567471265792847" blue="0.81002122163772583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rsN-ln-kQl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6uo-QI-ksz"/>
+                    <constraint firstItem="WIr-3v-5QL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IWN-lL-KTc"/>
+                    <constraint firstAttribute="trailing" secondItem="WIr-3v-5QL" secondAttribute="trailing" constant="10" id="Nka-ZZ-R3R"/>
+                    <constraint firstItem="PdA-63-IXo" firstAttribute="leading" secondItem="rsN-ln-kQl" secondAttribute="trailing" constant="10" id="aZa-4f-pEB"/>
+                    <constraint firstItem="ek3-zN-lXA" firstAttribute="leading" secondItem="rsN-ln-kQl" secondAttribute="leading" id="anZ-VN-hfI"/>
+                    <constraint firstItem="WIr-3v-5QL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cTg-77-nDH"/>
+                    <constraint firstAttribute="trailing" secondItem="WIr-3v-5QL" secondAttribute="trailing" constant="10" id="ecg-L2-AXh"/>
+                    <constraint firstItem="1PI-es-ndz" firstAttribute="top" secondItem="WIr-3v-5QL" secondAttribute="bottom" constant="1" id="kvW-3G-LJO"/>
+                    <constraint firstAttribute="bottom" secondItem="ek3-zN-lXA" secondAttribute="bottom" constant="5" id="nHN-Lm-d2d"/>
+                    <constraint firstItem="PdA-63-IXo" firstAttribute="top" secondItem="rsN-ln-kQl" secondAttribute="top" id="pt7-G2-kNB"/>
+                    <constraint firstItem="1PI-es-ndz" firstAttribute="centerX" secondItem="WIr-3v-5QL" secondAttribute="centerX" id="xhl-Oi-MDX"/>
+                    <constraint firstItem="rsN-ln-kQl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yeb-nV-14P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="Code" destination="PdA-63-IXo" id="8DS-qs-MRZ"/>
+                <outlet property="codeStatus" destination="WIr-3v-5QL" id="FD6-6T-I5P"/>
+                <outlet property="label" destination="1PI-es-ndz" id="S0I-B5-ri6"/>
+                <outlet property="status" destination="ek3-zN-lXA" id="YLl-oK-1tp"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="61.5"/>
+        </tableViewCell>
+    </objects>
+</document>

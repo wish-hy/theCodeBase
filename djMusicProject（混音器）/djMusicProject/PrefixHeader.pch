@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  collectionView
+//
+//  Created by ios01 on 2017/7/14.
+//  Copyright © 2017年 ios01. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "AERecorder.h"
+#import "AEAudioController.h"
+#import "config.h"
+// 将16进制的颜色值,透明度，转换为uicolor
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(float)alphaValue]
+#define UIColorFromRGB(rgbValue) UIColorFromRGBA(rgbValue, 1.0)
+#define MainColor UIColorFromRGB(0x191f23)
+#define NomalColor UIColorFromRGB(0x20272b)
+
+#define UISCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define UISCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+// 设置尺寸
+#define FFDeviceRect [[UIScreen mainScreen] bounds]
+#define FFSCREEN_SCALE [[UIScreen mainScreen] scale]
+#define FFScreen_W [UIScreen mainScreen].currentMode.size.width
+#define FFScreen_H [UIScreen mainScreen].currentMode.size.height
+
+
+
+#endif /* PrefixHeader_pch */

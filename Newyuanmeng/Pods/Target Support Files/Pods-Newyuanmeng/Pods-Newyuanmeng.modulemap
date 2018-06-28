@@ -1,0 +1,6 @@
+framework module Pods_Newyuanmeng {
+  umbrella header "Pods-Newyuanmeng-umbrella.h"
+
+  export *
+  module * { export * }
+}
